@@ -28,6 +28,8 @@
 	display: flex;
 	height: 700px;
 	background-color: gray;
+	align-items: center;
+	justify-content: center;
 }
 
 #rodape {
@@ -39,4 +41,40 @@
 	font-family: Arial;
 	font-weight: bold;
 	align-items: center;	
+}
+
+.login{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	height: 30%;
+	background-color: white;
+	border: 10px solid #044384;
+	padding: 40px;
+}
+
+.barra{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.campo{
+	font-family: Arial;
+	font-size: 24px;
+}
+
+.entrada{
+	font-family: Arial;
+	font-size: 24px;
+	width: 150px;	
+}
+
+.botao{
+	border: none;
+	background-color: gray;
+	color: white;
+	padding: 20px 40px;
+	font-size: 16px;
+	font-weight: bold;
 }

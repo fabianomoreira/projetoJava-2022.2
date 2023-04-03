@@ -13,12 +13,18 @@
 				<div id="menu">Login</div>
 			</div>
 			<div id="conteudo">
-				<form method="post" action="home.html">
-					<label>Usuário</label>
-					<input type="text" id="txtUsuario" name="txtUsuario"/>
-					<label>Senha</label>
-					<input type="password" id="txtSenha" name="txtSenha"/>
-					<input type="submit" value="Entrar">
+				<form class="login" method="post" action="LoginServlet">
+					<div>
+						<label class="campo">Usuário</label>
+						<input class="entrada" type="text" id="txtUsuario" name="txtUsuario"/>
+					</div>
+					<div>
+						<label class="campo">Senha</label>
+						<input class="entrada" type="password" id="txtSenha" name="txtSenha"/>
+					</div>
+					<div class="barra">
+						<input class="botao" type="submit" value="Entrar">
+					</div>
 				</form>
 			</div>
 			<div id="rodape">Copyright &copy 2023</div>

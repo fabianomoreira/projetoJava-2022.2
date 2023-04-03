@@ -10,7 +10,7 @@
 		<div id="pagina">
 			<div id="barra">
 				<div id="logo"><img src="images/senac-logo.png" height="100px"></div>
-				<div id="menu">Login</div>
+				<div id="menu"><a href="LogoutServlet">Logout</a></div>
 			</div>
 			<div id="conteudo">
 				<h1>Bem vindo!</h1>
