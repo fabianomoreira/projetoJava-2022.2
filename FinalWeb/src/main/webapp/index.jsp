@@ -14,13 +14,11 @@
 			</div>
 			<div id="conteudo">
 				<form class="login" method="post" action="LoginServlet">
-					<div>
-						<label class="campo">Usuário</label>
-						<input class="entrada" type="text" id="txtUsuario" name="txtUsuario"/>
+					<div class="div-entrada">
+						<input class="entrada" placeholder="Usuário" type="text" id="txtUsuario" name="txtUsuario"/>
 					</div>
-					<div>
-						<label class="campo">Senha</label>
-						<input class="entrada" type="password" id="txtSenha" name="txtSenha"/>
+					<div class="div-entrada">
+						<input class="entrada" placeholder="Senha" type="password" id="txtSenha" name="txtSenha"/>
 					</div>
 					<div class="barra">
 						<input class="botao" type="submit" value="Entrar">
