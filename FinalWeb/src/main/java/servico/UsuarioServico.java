@@ -1,12 +1,14 @@
 package servico;
 
+import java.util.List;
+
 import dao.UsuarioDAO;
 import modelo.Usuario;
 
-public class LoginServico {
+public class UsuarioServico {
+	UsuarioDAO dao = new UsuarioDAO();
+
 	public boolean verificarUsuario(Usuario usuario) {
-		UsuarioDAO dao = new UsuarioDAO();
-		
 		Usuario u = dao.validarLogin(usuario);
 		
 		if(u.getNome() != null) {
@@ -14,5 +16,11 @@ public class LoginServico {
 		} else {
 			return false;
 		}
+	}
+	
+	public List<Usuario> listarUsuario(){
+		List<Usuario> lista = dao.listar();
+		
+		return lista;
 	}
 }
