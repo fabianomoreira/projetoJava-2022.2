@@ -68,4 +68,25 @@ public class UsuarioDAO {
 		
 		return listaDeUsuarios;
 	}
+	
+	public boolean incluir(Usuario usuario) {
+		Connection cnx = Dao.getConexao();
+		String sql = "INSERT INTO usuario(usuario, senha, nome, email) VALUES(?, ?, ?, ?)";
+		boolean retorno = true;
+		
+		try {
+			PreparedStatement ps = cnx.prepareStatement(sql);
+			
+			ps.setString(1, usuario.getUsuario());
+			ps.setString(2, usuario.getSenha());
+			ps.setString(3, usuario.getNome());
+			ps.setString(4, usuario.getEmail());
+			
+			ps.execute();
+		} catch (SQLException e) {
+			retorno = false;
+		}
+		
+		return retorno;
+	}
 }
